@@ -17,20 +17,27 @@ body{
   overflow: auto;
   overflow-wrap: break-word;
 }
-.img-container:hover{
-  text-align: center;
-  background-size: cover;
-  filter: brightness(20%);
-  transition: 500ms;
-}
-p{
-  margin-top: 20px;
-  margin-left: auto;
-  
-}
-
 #info-content{
-  color: white;
+  padding-left-left: auto;
+  font-family: sans-serif;
+  color: #f3f8d9;
+  transition: 500ms;
+  opacity: 0;
+  margin: 0;
+  height: 100%;
+
+}
+#info-content:hover{
+  opacity: 1; 
+  font-family: sans-serif;
+  color: #f3f8d9;
+  text-align: center;
+  transition: 500ms;
+  padding-left-left: auto;
+  background: rgba(0, 0, 0, 0.70);
 }
 
-/* test */
+#info-heading{
+  margin: 0;
+  padding-top: 20px;
+}

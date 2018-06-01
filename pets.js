@@ -17,7 +17,9 @@ function ajax() {
 function renderHTML(x){
 	let content = ""
 	for (i=0; i < x.length; i++) {
-		content += "<div class='img-container' style='background-image: url(" + x.[i].bg +")'>" + "<div id='info-content'>" + "<h1>" + x[i].name + "</h1><br><p>" + "test" + "</p>" + "</div>" + "</div>";
+		content += "<div class='img-container' style='background-image: url(" + x[i].bg +")'>"
+		 + "<div id='info-content'>" + "<h1 id='info-heading'>" + x[i].name + "</h1><br><p>"
+		 + "Likes: " + x[i].foods.likes[0] + ", " + x[i].foods.likes[1] + "</p>" + "</div>" + "</div>";
 	}
 	info.insertAdjacentHTML('beforeend', content);
 };
